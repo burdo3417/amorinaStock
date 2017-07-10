@@ -15,7 +15,7 @@ class Database:
         try:
             self.cursor.execute(query)
             self.connection.commit()
-            print("INSERT succesfully")
+            print("INSERT succesfully into DB")
         except:
             self.connection.rollback()
             print("INSERT error")
